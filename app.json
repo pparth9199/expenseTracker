@@ -1,4 +1,8 @@
 {
-  "name": "expenseTracker",
-  "displayName": "expenseTracker"
+  "name": "Money Track",
+  "displayName":"MoneyTrack",
+  "expo":{
+    "sdkVersion":"40.0.0",
+    "name":"Money Track"
+  }
 }

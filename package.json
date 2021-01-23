@@ -10,14 +10,16 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@expo/webpack-config": "^0.12.53",
     "@react-native-async-storage/async-storage": "^1.13.2",
     "@react-native-community/masked-view": "^0.1.10",
     "@react-native-community/toolbar-android": "^0.1.0-rc.2",
     "@react-navigation/native": "^5.8.10",
     "@react-navigation/stack": "^5.12.8",
+    "expo": "^40.0.1",
     "native-base": "^2.15.2",
     "react": "16.13.1",
-    "react-native": "0.63.4",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.0.tar.gz",
     "react-native-circle-button": "^1.0.9",
     "react-native-gesture-handler": "^1.9.0",
     "react-native-linear-gradient": "^2.5.6",
