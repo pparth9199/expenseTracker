@@ -68,7 +68,7 @@ function AddTransaction({navigation}) {
                 fontSize: 17,
                 padding: 20,
                 color: '#fff',
-                fontFamily: 'Lato-Regular',
+                
                 fontWeight: '700',
               }}>
               Add Transaction

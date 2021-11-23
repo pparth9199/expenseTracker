@@ -1,8 +1,11 @@
 {
   "name": "Money Track",
-  "displayName":"MoneyTrack",
-  "expo":{
-    "sdkVersion":"40.0.0",
-    "name":"Money Track"
+  "displayName": "MoneyTrack",
+  "expo": {
+    "sdkVersion": "40.0.0",
+    "name": "Money Track",
+    "android": {
+      "package": "com.parthPatel.moneyTrack"
+    }
   }
 }

@@ -9,7 +9,7 @@ export const Card = ({navigation}) => {
   const {transactions} = useSelector((state) => state.transactions);
   const prices = transactions.map((transaction) => transaction.price);
   const totalPrice = prices.reduce((prev, cur) => (prev += cur), 0);
-  const expense =
+  let expense =
     prices
       .filter((price) => price < 0)
       .reduce((prev, cur) => (prev += cur), 0) * -1;
@@ -26,14 +26,15 @@ export const Card = ({navigation}) => {
           style={{
             fontSize: 20,
             color: '#fff',
-            fontFamily: 'Lato-Regular',
+            
             fontWeight: '600',
           }}>
           Current Balance
         </Text>
+        
         <Text
           style={{
-            fontFamily: 'Lato-Medium',
+    
             fontSize: 32,
             color: '#fff',
             fontWeight: '700',
@@ -43,7 +44,6 @@ export const Card = ({navigation}) => {
         </Text>
         <Text
           style={{
-            fontFamily: 'Lato-Regular',
             color: '#FFF',
             fontSize: 16,
             alignSelf: 'flex-start',
@@ -54,7 +54,6 @@ export const Card = ({navigation}) => {
         </Text>
         <Text
           style={{
-            fontFamily: 'Lato-Refular',
             color: '#FFF',
             fontSize: 16,
             alignSelf: 'flex-start',
@@ -63,6 +62,8 @@ export const Card = ({navigation}) => {
           }}>
           ₹{expense}
         </Text>
+        
+       
         <View style={{flex: 1, flexDirection: 'row'}}>
           <Button
             rounded
@@ -70,7 +71,7 @@ export const Card = ({navigation}) => {
             style={{
               width: '40%',
               paddig: 10,
-              marginTop: 50,
+              marginTop: 40,
               backgroundColor: '#778beb',
               alignItems: 'center',
               justifyContent: 'center',
@@ -81,9 +82,7 @@ export const Card = ({navigation}) => {
             <Text
               style={{
                 fontSize: 17,
-                padding: 20,
                 color: '#fff',
-                fontFamily: 'Lato-Regular',
                 fontWeight: '700',
               }}>
               Earned
@@ -98,7 +97,7 @@ export const Card = ({navigation}) => {
               backgroundColor: '#778beb',
               alignItems: 'center',
               justifyContent: 'center',
-              marginTop: 50,
+              marginTop: 40,
               marginLeft: 57,
             }}
             onPress={() => {
@@ -107,9 +106,7 @@ export const Card = ({navigation}) => {
             <Text
               style={{
                 fontSize: 17,
-                padding: 20,
                 color: '#fff',
-                fontFamily: 'Lato-Regular',
                 fontWeight: '700',
               }}>
               Spent
