@@ -7,6 +7,9 @@ import AddTransaction from './src/AddTransaction';
 import subTransaction from './src/subTransaction';
 import {PersistGate} from 'redux-persist/es/integration/react';
 import {Text} from 'react-native';
+
+
+
 import SplashScreen from './src/Parts/SplashScreen';
 
 //redux
